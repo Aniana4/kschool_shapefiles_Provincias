@@ -68,7 +68,7 @@ saphefile2 <- fortify(sphefile1)
 png("PlotShapewithggmap.png")
 mapa+geom_polygon(aes(x=long,y=lat,group=group),fill='grey',color='green',data=saphefile2,alpha=0)
 ```
-![mapa+geom_polygon](https://github.com/Aniana4/kschool_shapefiles_Provincias/Provincias_Espana2.png)
+![ma](https://github.com/Aniana4/kschool_shapefiles_Provincias/Provincias_Espana2.png)
 ```r
 dev.off()
 ```
