@@ -39,7 +39,9 @@ provin@data
 *Vemos los graficos*
 ```r
 plot(provin, col=provin$Vida)
+![plot](https://github.com/Aniana4/kschool_shapefiles_Provincias/Provincias_Espana.png)
 spplot(provin, "Vida", colorRampPalette="blue")
+![spplot](https://github.com/Aniana4/kschool_shapefiles_Provincias/Freq_EspVida.png)
 provin
 ```
 *Combino ggmap con shapefiles*
@@ -63,5 +65,6 @@ saphefile2 <- fortify(sphefile1)
 ```r
 png("PlotShapewithggmap.png")
 mapa+geom_polygon(aes(x=long,y=lat,group=group),fill='grey',color='green',data=saphefile2,alpha=0)
+![mapa+geom_polygon](https://github.com/Aniana4/kschool_shapefiles_Provincias/Provincias_Espana2.png)
 dev.off()
 ```
