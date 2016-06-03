@@ -45,6 +45,7 @@ plot(provin, col=provin$Vida)
 spplot(provin, "Vida", colorRampPalette="blue")
 ```
 ![spplot](https://github.com/Aniana4/kschool_shapefiles_Provincias/Freq_EspVida.png)
+
 *Combino ggmap con shapefiles*
 *Trata de combinar _shapefiles_ con `ggmap`*
 ```r
@@ -68,5 +69,6 @@ png("PlotShapewithggmap.png")
 mapa+geom_polygon(aes(x=long,y=lat,group=group),fill='grey',color='green',data=saphefile2,alpha=0)
 ```
 ![mapa+geom_polygon](https://github.com/Aniana4/kschool_shapefiles_Provincias/Provincias_Espana2.png)
+```r
 dev.off()
-
+```
